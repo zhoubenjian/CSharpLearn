@@ -6,7 +6,7 @@
         {
             try
             {
-                Console.WriteLine("Season1: 01Base");
+                Console.WriteLine("Season1: 01Base\n");
 
                 #region 字符转义
                 {

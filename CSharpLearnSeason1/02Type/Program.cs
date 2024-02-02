@@ -6,7 +6,7 @@
         {
             try
             {
-                Console.WriteLine("Season1: 02Type");
+                Console.WriteLine("Season1: 02Type\n");
 
                 #region 字符类型
                 {
@@ -43,13 +43,35 @@
                 }
                 #endregion
 
+                Console.WriteLine($"\n---------------------------------------------\n");
+
                 #region 数值类型
                 {
+                    Console.WriteLine($"MaxByteValue:{byte.MaxValue}"); // 255
+                    Console.WriteLine($"MinByteValue:{byte.MinValue}"); // 0
+
+                    Console.WriteLine($"MaxShortValue:{short.MaxValue}");   // 32767
+                    Console.WriteLine($"MinShortValue:{short.MinValue}");   // -32768
+
                     Console.WriteLine($"MaxIntValue:{int.MaxValue}");   // 2147483647
                     Console.WriteLine($"MinIntValue:{int.MinValue}");   //-2147483648
+
+                    Console.WriteLine($"MaxLongValue:{long.MaxValue}"); // 9223372036854775807
+                    Console.WriteLine($"MinLongValue:{long.MinValue}"); // -9223372036854775808
+
+                    Console.WriteLine($"MaxFloatValue:{float.MaxValue}");   // 3.4028235E+38
+                    Console.WriteLine($"MinFloatValue:{float.MinValue}");   // -3.4028235E+38
                 }
                 #endregion
 
+                Console.WriteLine($"\n---------------------------------------------\n");
+
+                //#region string转int
+                //{
+                //    int input = Convert.ToInt32(Console.ReadLine());
+                //    Console.WriteLine(input);
+                //}
+                //#endregion
             }
             catch (Exception ex)
             {
