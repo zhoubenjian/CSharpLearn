@@ -59,6 +59,16 @@
                     }
                     Console.WriteLine("1 + 2 +...+ 99 + 100 = {0}", sum);
 
+                    // 增长率问题
+                    int origin = 80000;
+                    int year = 0;
+                    while (origin < 200000)
+                    {
+                        origin = (int)(origin * 1.25);
+                        year++;
+                    }
+                    Console.WriteLine($"80000 => 200000，需要{year}年");
+
                     // (3n + 1)问题：任意大于1的整数，奇数*3+1，偶数变为原来的一半，经过有限次变换最终变为1
                     int num = Convert.ToInt32(Console.ReadLine());
                     int temp = num;
@@ -76,6 +86,58 @@
                         count++;
                     }
                     Console.WriteLine($"{temp}经过{count}次3n+1变换！");
+                }
+                #endregion
+
+                Console.WriteLine($"\n---------------------------------------------\n");
+
+                #region for循环
+                {
+                    for (int i = 1; i <= 10; i++)
+                    {
+                        Console.Write(i + ", ");    // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                    }
+                }
+                #endregion
+
+                Console.WriteLine($"\n---------------------------------------------\n");
+
+                // 至少执行一次
+                #region do...while
+                {
+                    int i = 1;
+                    do
+                    {
+                        Console.Write(i + ", ");    // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                        i++;
+                    } while (i <= 10);
+                }
+                #endregion
+
+                Console.WriteLine($"\n---------------------------------------------\n");
+
+                #region 回文数判断
+                {
+                    int n = Convert.ToInt32(Console.ReadLine());
+                    int temp = n;
+                    int number = 0;
+                    while (n != 0)
+                    {
+                        int i = n % 10;
+                        number *= 10;
+                        number += i;
+
+                        n = n / 10;
+                    }
+
+                    if (number == temp)
+                    {
+                        Console.WriteLine($"{temp}是回文数！");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{temp}不是回文数！");
+                    }
                 }
                 #endregion
             }
