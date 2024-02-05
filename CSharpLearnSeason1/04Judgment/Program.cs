@@ -140,6 +140,47 @@
                     }
                 }
                 #endregion
+
+                Console.WriteLine($"\n---------------------------------------------\n");
+
+                #region 可乐兑换问题(364瓶可乐兑换，3个空瓶可兑换一瓶可乐)
+                {
+                    int initNum = 364;
+                    int sum = initNum;
+
+                    while (initNum > 2)
+                    {
+                        sum += (initNum / 3);
+                        initNum = (initNum / 3) + (initNum % 3);
+                    }
+
+                    Console.WriteLine($"一共可以畅饮{sum}瓶可乐");
+                }
+                #endregion
+
+                Console.WriteLine($"\n---------------------------------------------\n");
+
+                #region 字符串加密
+                {
+                    Console.Write("请输入原始信息：");
+                    char[] chars = Console.ReadLine().ToCharArray();
+                    for (global::System.Int32 i = 0; i < chars.Length; i++)
+                    {
+                        if ((chars[i] >= 'a' && chars[i] <= 'z') || (chars[i] >= 'A' && chars[i] <= 'Z'))
+                        {
+                            chars[i] = (char)(chars[i] + 3);
+                            if ((chars[i] > 'Z' && chars[i] <= 'Z' + 3) || (chars[i] > 'z' && chars[i] <= 'z' + 3))
+                                chars[i] = (char)(chars[i] - 26);
+                        }
+                    }
+
+                    foreach (var c in chars)
+                    {
+                        Console.Write($"{c}");
+                    }
+
+                }
+                #endregion
             }
             catch (Exception ex)
 			{
