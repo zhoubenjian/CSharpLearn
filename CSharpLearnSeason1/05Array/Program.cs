@@ -58,15 +58,38 @@
                     Console.WriteLine($"输入一个数：");
                     int n = Convert.ToInt32(Console.ReadLine());
                     int p = 0;
+                    bool exist = false;
                     for (global::System.Int32 i = 0; i < intArray.Length - 1; i++)
                     {
+                        if (intArray[0] > n)
+                        {
+                            p = -1;
+                            exist = true;
+                            break;
+                        }
                         if (n >= intArray[i] && n <= intArray[i + 1])
                         {
                             p = i;
+                            exist = true;
                             break;
                         }
                     }
+
+                    if (exist == false)
+                        p = intArray.Length;
+
+                    int[] copyArray = new int[intArray.Length + 1];
+                    for (global::System.Int32 i = 0; i < p + 1; i++)
+                        copyArray[i] = intArray[i];
+
+                    copyArray[p + 1] = n;
+
+                    for (global::System.Int32 i = p + 1; i < intArray.Length; i++)
+                        copyArray[i + 1] = intArray[i];
                     Console.WriteLine($"{n}插入的位置是{p}");
+
+                    foreach (var item in copyArray)
+                        Console.Write($"{item} ");
                 }
                 #endregion
             }
