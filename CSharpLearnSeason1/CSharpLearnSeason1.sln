@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03Operator", "03Operator\03
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04Judgment", "04Judgment\04Judgment.csproj", "{AD474127-B09F-4427-89E5-3677AEBDB4D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05Array", "05Array\05Array.csproj", "{E90208EE-C681-4044-84FE-AA631FDD976D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05Array", "05Array\05Array.csproj", "{E90208EE-C681-4044-84FE-AA631FDD976D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06Math", "06Math\06Math.csproj", "{B2B40ACC-4225-47CF-9A05-072CDCB6675A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06Math", "06Math\06Math.csproj", "{B2B40ACC-4225-47CF-9A05-072CDCB6675A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07Function", "07Function\07Function.csproj", "{4869F4E2-99C4-4088-AE57-F346E17E19DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B2B40ACC-4225-47CF-9A05-072CDCB6675A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2B40ACC-4225-47CF-9A05-072CDCB6675A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2B40ACC-4225-47CF-9A05-072CDCB6675A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4869F4E2-99C4-4088-AE57-F346E17E19DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4869F4E2-99C4-4088-AE57-F346E17E19DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4869F4E2-99C4-4088-AE57-F346E17E19DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4869F4E2-99C4-4088-AE57-F346E17E19DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
