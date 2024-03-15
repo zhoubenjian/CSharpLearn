@@ -7,10 +7,8 @@
 			try
 			{
                 Console.WriteLine("CSharpLearn2: 01Exception");
-
                 {
                     int[] intArray = { 1, 2, 3, 4 };
-
                     try
                     {
                         int temp = intArray[2];
@@ -31,11 +29,9 @@
                 }
 
                 Console.WriteLine("--------------------------");
-
                 {
                     int n1 = 0;
                     int n2 = 0;
-
                     while (true)
                     {
                         try
