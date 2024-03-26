@@ -2,32 +2,32 @@ namespace _02Class;
 
 public class Vector3
 {
-    private float x;
-    private float y;
-    private float z;
+    private float _x;
+    private float _y;
+    private float _z;
 
 
     public float X
     {
-        get => x;
-        set => x = value;
+        get => _x;
+        set => _x = value;
     }
 
     public float Y
     {
-        get => y;
-        set => y = value;
+        get => _y;
+        set => _y = value;
     }
 
     public float Z
     {
-        get => z;
-        set => z = value;
+        get => _z;
+        set => _z = value;
     }
 
 
     public double Distance()
     {
-        return Math.Sqrt(x * x + y * y + z * z);
+        return Math.Sqrt(_x * _x + _y * _y + _z * _z);
     }
 }
