@@ -10,7 +10,7 @@
 
                 #region 委托使用
                 {
-                    Play(ShowUI);
+                    Play(ShowUI, Restart);
                 }
                 #endregion
             }
@@ -24,8 +24,9 @@
 
 
         delegate void DeathDelagate();
+        delegate void RestartDelegate(string name);
 
-        static void Play(DeathDelagate deathDelagate)
+        static void Play(DeathDelagate deathDelagate, RestartDelegate restartDelegate)
         {
             Console.WriteLine("做任务");
             Console.WriteLine($"玩家正在战斗");
@@ -33,12 +34,20 @@
 
             if (deathDelagate != null)
                 deathDelagate();
+
+            if (restartDelegate != null)
+                restartDelegate("Michael Scofield");
         }
 
         static void ShowUI()
         {
             Console.WriteLine("显示玩家死亡后的UI");
             Console.WriteLine("返回首页的UI");
+        }
+
+        static void Restart(string name)
+        {
+            Console.WriteLine($"{name}，{DateTime.Now} 重新开始一局游戏！");
         }
     }
 }
