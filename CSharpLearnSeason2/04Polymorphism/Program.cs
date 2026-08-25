@@ -39,5 +39,8 @@ class Program
             manager.Say();          // I am a Manager!
             manager.GetSalary();    // Manager salary is 3999.00, bonus is 1999.00, total income is 5998.00!
         }
+
+
+        Console.ReadKey(true);
     }
 }

@@ -25,5 +25,8 @@ class Program
             bwm.Stop();
         }
         #endregion
+
+
+        Console.ReadKey(true);
     }
 }
