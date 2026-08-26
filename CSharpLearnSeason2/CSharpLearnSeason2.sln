@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04Polymorphism", "04Polymor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05OperatorOverload", "05OperatorOverload\05OperatorOverload.csproj", "{161C2ADD-E226-4657-B17D-94F41253D008}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06Event", "06Event\06Event.csproj", "{4F166257-E5FD-4518-8207-26EA3AA7D799}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{161C2ADD-E226-4657-B17D-94F41253D008}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{161C2ADD-E226-4657-B17D-94F41253D008}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{161C2ADD-E226-4657-B17D-94F41253D008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F166257-E5FD-4518-8207-26EA3AA7D799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F166257-E5FD-4518-8207-26EA3AA7D799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F166257-E5FD-4518-8207-26EA3AA7D799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F166257-E5FD-4518-8207-26EA3AA7D799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
